@@ -37,7 +37,7 @@ Both methods return promises.
 
 ### options
 
-	`ttl` Lock time to live in microseconds (will be automatically released after that time)
+	`ttl` Lock time to live in milliseconds (will be automatically released after that time)
 
 	`timeout` Time trying to get lock before (ms)
 

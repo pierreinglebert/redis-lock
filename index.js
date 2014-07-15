@@ -16,7 +16,7 @@ module.exports = function(redis) {
 		*/
 		acquire: function(key, options) {
 			options = options || {};
-			options.ttl = options.ttl || 5000; // Lock time to live in microseconds
+			options.ttl = options.ttl || 5000; // Lock time to live in milliseconds
 			options.timeout = options.timeout || 5000; // time trying to get local before timeout
 			options.wait = options.wait || 30; // time between 2 tries to get lock
 
@@ -47,7 +47,7 @@ module.exports = function(redis) {
 			return del(hashKey(key));
 		},
 		renew: function(key, ttl) {
-			var expire = Promise.promisify(redis.expire, redis);
+			var expire = Promise.promisify(redis.pexpire, redis);
 			return expire(hashKey(key), ttl);
 		},
 		isLocked: function(key) {
