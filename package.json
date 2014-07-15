@@ -1,0 +1,21 @@
+{
+  "name": "redis-locking",
+  "version": "0.1.0",
+  "description": "Redis lock working across multiple nodejs instances",
+  "keywords": [
+    "redis",
+    "lock",
+    "distributed"
+  ],
+  "dependencies": {
+    "bluebird": "^2.2.2"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "mocha": "~1.19.0",
+    "redis": "^0.11.0"
+  },
+  "scripts": {
+    "test": "mocha test"
+  }
+}
