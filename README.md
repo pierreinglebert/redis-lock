@@ -1,7 +1,7 @@
 redis-lock
 ==========
 
-Redis distributed lock across multiple instances/servers using (setnx)[http://redis.io/commands/setnx]
+Redis distributed lock across multiple instances/servers using [setnx](http://redis.io/commands/setnx)
 
   [![NPM version][npm-image]][npm-url]
   [![build status][travis-image]][travis-url]
@@ -71,7 +71,7 @@ Both methods return promises.
 
 [npm-image]: https://img.shields.io/npm/v/redis-locking.svg?style=flat
 [npm-url]: https://npmjs.org/package/redis-locking
-[travis-image]: https://secure.travis-ci.org/pierreinglebert/redis-lock.svg?style=flat
+[travis-image]: https://img.shields.io/travis/pierreinglebert/redis-lock.svg?style=flat
 [travis-url]: http://travis-ci.org/pierreinglebert/redis-lock
-[coveralls-image]: https://img.shields.io/pierreinglebert/redis-lock.svg?style=flat
+[coveralls-image]: https://img.shields.io/coveralls/pierreinglebert/redis-lock.svg?style=flat
 [coveralls-url]: https://coveralls.io/r/pierreinglebert/redis-lock?branch=master
