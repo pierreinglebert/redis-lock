@@ -1,12 +1,17 @@
 {
   "name": "redis-locking",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Redis lock working across multiple nodejs instances",
   "keywords": [
     "redis",
     "lock",
     "distributed"
   ],
+  "homepage": "https://github.com/pierreinglebert/redis-lock",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pierreinglebert/redis-lock"
+  },
   "dependencies": {
     "bluebird": "^2.2.2"
   },
