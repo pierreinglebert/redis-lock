@@ -14,15 +14,22 @@ Redis distributed lock across multiple instances/servers using [setnx](http://re
 # Install
 
 ```
-npm install
+npm install redis-locking
 ```
 
 
 # Examples
 
 ```javascript
+var lock = require('redis-locking')(redis);
 
-var lock = require('redis')
+lock.acquire('mykey', {ttl: 500})
+.then(function() {
+  //do something
+})
+.then(function() {
+  return lock.release('mykey');
+})
 ```
 
 # API
